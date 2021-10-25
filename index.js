@@ -22,20 +22,45 @@ function removeChar(pos, str) {
     const arrString = str.split("")
     arrString.splice(pos, 1);
     return arrString.toString();
-
 }
 
 removeChar(3, "Alfred")
     /* 4. Create a function to find and return the largest of three given integers. */
+function maxVal(a, b, c) {
+    let maxNum = a;
+    if (a > b && a > c) {
+        return a;
+    } else if (b > a && b > c) {
+        return b;
+    } else if (c > a && c > b) {
+        return c
+    }
+}
+maxVal(3, 28, 9)
 
 
 /* 5. Create a function to check if two numbers are in the range 40-60 or 70-100. 
     Return `true` if they do, return `false` if one (or both) don't. */
 
+function inrange(a, b) {
+    if (a >= 40 && a <= 60 || a >= 70 && a <= 100 || b >= 40 && b <= 60 || b >= 70 && b <= 100) {
+        return true;
+    } else { return false }
+}
+
+inrange(30, 60)
+
+
+
 
 /* 6. Create a function to create a new string composed of a specified number of copies of a given string. 
     Pass the string and the number of copies as parameters. */
 
+
+function createCopy(str, n) {
+    return str.repeat(n);
+
+}
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
