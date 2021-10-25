@@ -64,14 +64,41 @@ function createCopy(str, n) {
 
 /* 7. Create a function to display the city name if the string begins with "Los" or "New". 
     Pass the city name as a parameter. Return `false` if they start with a different string. */
-
+function cityname(str) {
+    let startStr = str.split("")
+    startStr = str[0] + str[1] + str[2];
+    if (startStr === "Los" || startStr === "New") {
+        alert(str)
+    } else {
+        return false
+    }
+}
 
 /* 8. Create a function to calculate and return the sum of all elements from an array with 3 elements. 
     Pass the array as a parameter. */
 
 
+function sumArrayElements(arr) {
+    let sum = 0
+    for (i = 0; i < arr.length; i++) {
+        sum += arr[i]
+    }
+    return sum
+}
+
 /* 9. Create a function to test if an array of lenght 2 contains 1 OR 3. 
     Return `true` is it does, `false` if it doesn't. */
+
+function checkContent(arr) {
+    for (i = 0; i < 2; i++) {
+        if (arr[i] == 1 || arr[i] == 3) {
+            return true
+        } else { return false }
+    }
+
+}
+
+
 
 
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
