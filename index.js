@@ -99,14 +99,26 @@ function checkContent(arr) {
 }
 
 
-
-
 /* 10. Create a function to test if an array of lenght 2 DOES NOT contain 1 or 3. 
     Return `true` if it doesn't, `false` if it does. */
+function checkContent(arr) {
+    for (i = 0; i < 2; i++) {
+        if (arr[i] !== 1 && arr[i] !== 3) {
+            return true
+        } else { return false }
+    }
 
+}
 
 /* 11. Create a function to find the longest string from a given array of strings. 
     Pass the array as parameter and return the longest string. */
+
+function longestString(arr) {
+    let maxLenghtStr = arr[0].length;
+    arr.map(x => maxLenghtStr = Math.max(maxLenghtStr, x.length))
+    let result = arr.filter(x => x.length == maxLenghtStr)
+    return result;
+}
 
 
 /* 12. Create a function to find the types of a given angle:
