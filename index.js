@@ -129,8 +129,37 @@ function longestString(arr) {
 
     Pass the angle as a parameter.
 */
+function findAngle(a) {
+    let angle = ""
+    if (a < 90) {
+        return angle = "Acute"
+    } else if (a == 90) {
+        return angle = "right"
+    } else if (a > 90 && a < 180) {
+        return angle = "obtuse"
+    } else if (a > 180) {
+        return angle = "straight"
+    }
+    console.log(angle)
+}
 
 
+/* function findAngleSwitch(a) {
+    switch (a) {
+        case (a < 90):
+            text = "Acute";
+            break;
+        case (a = 90):
+            test = "right"
+        case (a > 90 && a < 180):
+            text = "Obtuse";
+            break;
+        case (a > 180):
+            text = "Straight"
+        default:
+            text = "insert a valid number";
+    }
+} */
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
 
