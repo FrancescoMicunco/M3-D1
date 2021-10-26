@@ -162,12 +162,26 @@ function findAngle(a) {
 } */
 /* 13. Create a function to find and return the index of the greatest element of a given array of integers that you passed as a parameter. */
 
-
-
-
+function indexOf(arr) {
+    let max = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    return arr.indexOf(max);
+}
 
 /* 14. Create a function to find and return the largest **even** number from an array of integers that is passed a parameter. */
-
+function largestEven(arr) {
+    let maxEven = 1;
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 == 0 && arr[i] > maxEven) {
+            maxEven = arr[i]
+        }
+    }
+    return maxEven
+}
 
 /* 15. Create a function to check from two given integers (passed as parameters) if one is positive and the other is negative. 
     Return `true` if that's the case, return `false` if it's not. */
